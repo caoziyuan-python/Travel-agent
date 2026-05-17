@@ -1,0 +1,20 @@
+# Web 框架
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Azure OpenAI（兼容 local_rednote_agent 的版本要求）
+openai>=1.0.0
+
+# MCP 客户端（local_rednote_agent 依赖）
+mcp>=1.2.0
+
+# RAG 静态知识库（POI向量检索 + 路线精确查询）
+chromadb>=0.5.0
+
+# 工具
+python-dotenv==1.0.1
+requests==2.32.3
+
+# 注意：local_rednote_agent 不是 PyPI 包，位于 scripts/xiaohongshu/local_rednote_agent
+# backend/agent/tools/xhs_tools.py 通过 sys.path + 包路径直接导入
+# 运行前需先安装其依赖：pip install openai>=1.0.0 mcp>=1.2.0 python-dotenv>=1.0.0

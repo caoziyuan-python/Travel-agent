@@ -1,0 +1,17 @@
+{
+  "typescript.tsserver.maxTsServerMemory": 2048,
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/.next/**": true,
+    "**/node_modules/**": true,
+    "**/data/rag_index/**": true,
+    "**/data/**/chroma/**": true,
+    "**/scripts/xhs_data/**": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/data/rag_index": true,
+    "**/scripts/xhs_data": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m json.tool)",
+      "Bash(python3)",
+      "Bash(pip install *)",
+      "Bash(timeout 120 python cli.py --no-xhs)",
+      "Bash(python -c \"import openai; print\\(openai.__version__\\)\")",
+      "Bash(where python *)",
+      "Bash(pip --version)",
+      "Bash(py -3.11 -c \"import openai; print\\(openai.__version__\\)\")",
+      "Bash(timeout 120 py -3.11 cli.py --no-xhs)",
+      "Bash(py -3.11 -c \"import agent.travel_agent; print\\('travel_agent OK'\\)\")",
+      "Bash(py -3.11 -c \"import sys; sys.path.insert\\(0, '..'\\); import scripts.flight_and_hotel_price_scraper.scraper; print\\('scraper OK'\\)\")",
+      "Bash(py -3.11 -c \"import agent.travel_agent; import agent.planner_agent; print\\('OK'\\)\")",
+      "Read(//c/Users/Dell/.claude/skills/artifacts-builder/**)",
+      "Bash(bash scripts/init-artifact.sh beijing-data-slides)",
+      "Bash(bash ../scripts/bundle-artifact.sh)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\Dell\\\\Desktop\\\\HKU MFFinTech\\\\MFIN7066\\\\Travel-Agent\\\\docs\\\\data-layer-slides.html\")",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\Dell\\\\Desktop\\\\HKU MFFinTech\\\\MFIN7066\\\\Travel-Agent\\\\docs\\\\rag-diagram.html\")",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\Dell\\\\Desktop\\\\HKU MFFinTech\\\\MFIN7066\\\\Travel-Agent\\\\docs\\\\rag-diagram.svg\")",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(python -c ' *)",
+      "Bash(python -m py_compile agent/orchestrator.py agent/planner_agent.py agent/output_formatter.py agent/requirement_agent.py)",
+      "Bash(curl -s -o /tmp/map_test.bin -w \"\\\\nHTTP_STATUS:%{http_code}\\\\nCONTENT_TYPE:%{content_type}\\\\n\" \"http://localhost:8000/api/v1/static-map?stops=%5B%7B%22lat%22%3A39.917839%2C%22lng%22%3A116.397029%2C%22type%22%3A%22attraction%22%2C%22name%22%3A%22Forbidden+City%22%7D%2C%7B%22lat%22%3A39.908069%2C%22lng%22%3A116.411571%2C%22type%22%3A%22restaurant%22%2C%22name%22%3A%22Wangfujing%22%7D%5D&size=400x200\")",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://restapi.amap.com/v3/staticmap?key=$\\(grep AMAP_API_KEY 'c:/Users/Dell/Desktop/HKU MFFinTech/MFIN7066/Travel-Agent/backend/.env')",
+      "Bash(curl -s -o /tmp/final_test.bin -w \"HTTP:%{http_code} TYPE:%{content_type} SIZE:%{size_download}\\\\n\" \"http://localhost:8000/api/v1/static-map?stops=%5B%7B%22lat%22%3A39.917839%2C%22lng%22%3A116.397029%2C%22type%22%3A%22attraction%22%2C%22name%22%3A%22Forbidden+City%22%7D%2C%7B%22lat%22%3A39.908069%2C%22lng%22%3A116.411571%2C%22type%22%3A%22restaurant%22%2C%22name%22%3A%22Wangfujing%22%7D%5D&size=400x200\")",
+      "Bash(python -m py_compile agent/travel_agent.py)"
+    ]
+  }
+}
